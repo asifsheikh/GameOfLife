@@ -2,6 +2,7 @@ package gameOfLife
 
 import com.google.common.truth.Truth.assertThat
 import gameOfLife.board.GameOfLifeBoardImpl
+import gameOfLife.board.SIZE_OF_BOARD
 import gameOfLife.rules.CellStatus.*
 import org.junit.Before
 import org.junit.Test
@@ -12,8 +13,7 @@ class GameOfLifeBoardImplTest {
 
     @Before
     fun setUp() {
-        board = GameOfLifeBoardImpl(6)
-        board.initialize()
+        board = GameOfLifeBoardImpl()
     }
 
     @Test
@@ -21,8 +21,8 @@ class GameOfLifeBoardImplTest {
         val numberOfRows = board.playingBoard.size
         val numberOfCols = board.playingBoard[0].size
 
-        assertThat(numberOfRows).isEqualTo(6)
-        assertThat(numberOfCols).isEqualTo(6)
+        assertThat(numberOfRows).isEqualTo(SIZE_OF_BOARD)
+        assertThat(numberOfCols).isEqualTo(SIZE_OF_BOARD)
     }
 
     @Test
@@ -111,14 +111,5 @@ class GameOfLifeBoardImplTest {
         board.setCellStatus(DEAD, rowNumber, colNumber)
 
         assertThat(board.playingBoard).isEqualTo(expectedBoard)
-    }
-
-    @Test
-    fun `should return the size of the board`() {
-        val expectedSizeOfBoard = 6
-
-        val actualSizeOfBoard = board.getBoardSize()
-
-        assertThat(actualSizeOfBoard).isEqualTo(expectedSizeOfBoard)
     }
 }

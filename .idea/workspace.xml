@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18844b8-8a4a-4744-a4b3-1b36795e5878" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/BoardInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoard.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeBoardImplTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -44,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeBoardImplTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="900">
+              <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -72,18 +67,18 @@
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeRulesTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.groovy" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.java" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/BoardInterface.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLifeBoard.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLifeBoardImpl.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoard.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeBoardImplTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt" />
       </list>
     </option>
   </component>
@@ -139,6 +134,15 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="gameOfLife" type="462c0819:PsiDirectoryNode" />
               <item name="board" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameoflife" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="gameOfLife" type="462c0819:PsiDirectoryNode" />
+              <item name="rules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
@@ -206,33 +210,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BoardTest">
+  <component name="RunManager" selected="Gradle.GameOfLifeRulesTest">
     <configuration name="BoardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BoardTest.should get the correct cell status for row and column number" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest.should get the correct cell status for row and column number&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -287,6 +271,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GameOfLifeBoardImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.GameOfLifeBoardImplTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GameOfLifeRulesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -309,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GameOfLifeRulesTest" />
+        <item itemvalue="Gradle.GameOfLifeBoardImplTest" />
         <item itemvalue="Gradle.BoardTest" />
         <item itemvalue="Gradle.BoardTest.should return invalid cell status for negative index" />
         <item itemvalue="Gradle.BoardTest.should return invalid cell status for index out of bounds" />
-        <item itemvalue="Gradle.GameOfLifeRulesTest" />
-        <item itemvalue="Gradle.BoardTest.should get the correct cell status for row and column number" />
       </list>
     </recent_temporary>
   </component>
@@ -331,18 +335,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest - 2020.01.31 at 17h 49m 04s.xml">
-      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BoardTest - 2020.01.31 at 17h 49m 45s.xml">
-      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BoardTest - 2020.01.31 at 17h 50m 26s.xml">
-      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BoardTest - 2020.01.31 at 17h 50m 59s.xml">
-      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="BoardTest - 2020.01.31 at 17h 52m 32s.xml">
       <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -360,6 +352,18 @@
     </history-entry>
     <history-entry file="BoardTest - 2020.01.31 at 17h 59m 56s.xml">
       <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeBoardImplTest - 2020.01.31 at 21h 13m 09s.xml">
+      <configuration name="GameOfLifeBoardImplTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeBoardImplTest - 2020.01.31 at 21h 13m 32s.xml">
+      <configuration name="GameOfLifeBoardImplTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeBoardImplTest - 2020.01.31 at 21h 13m 49s.xml">
+      <configuration name="GameOfLifeBoardImplTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 21h 14m 05s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -423,48 +427,48 @@
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoard.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="e#26#99#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        <state relative-caret-position="573">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="e#26#132#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="162">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#26#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/board/GameOfLifeBoardImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="738">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
           <folding>
             <element signature="e#26#99#0" expanded="true" />
           </folding>
@@ -473,8 +477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeBoardImplTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="900">
+          <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
         </state>
       </provider>
     </entry>

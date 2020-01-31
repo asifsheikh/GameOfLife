@@ -3,14 +3,16 @@ package gameOfLife.board
 import gameOfLife.rules.CellStatus
 import gameOfLife.rules.GameOfLifeRule
 
-class GameOfLifeBoardImpl(private val sizeOfBoard: Int) : GameOfLifeBoard {
+internal const val SIZE_OF_BOARD = 6
+
+class GameOfLifeBoardImpl : GameOfLifeBoard {
 
     var playingBoard = arrayOf<Array<CellStatus>>()
 
-    override fun initialize() {
-        for (i in 1..sizeOfBoard) {
+    init {
+        for (i in 1..SIZE_OF_BOARD) {
             var array = arrayOf<CellStatus>()
-            for (j in 1..sizeOfBoard) {
+            for (j in 1..SIZE_OF_BOARD) {
                 array += CellStatus.LIVE
             }
             playingBoard += array
@@ -29,26 +31,24 @@ class GameOfLifeBoardImpl(private val sizeOfBoard: Int) : GameOfLifeBoard {
     override fun getCellStatus(rowNumber: Int, columnNumber: Int): CellStatus =
         if (rowNumber < 0 || columnNumber < 0) {
             CellStatus.INVALID
-        } else if (rowNumber < sizeOfBoard && columnNumber < sizeOfBoard) {
+        } else if (rowNumber < SIZE_OF_BOARD && columnNumber < SIZE_OF_BOARD) {
             playingBoard[rowNumber][columnNumber]
         } else CellStatus.INVALID
 
     override fun setCellStatus(cellStatus: CellStatus, rowNumber: Int, colNumber: Int) {
         if (rowNumber < 0 || colNumber < 0) return
-        if (rowNumber >= sizeOfBoard || colNumber >= sizeOfBoard) return
+        if (rowNumber >= SIZE_OF_BOARD || colNumber >= SIZE_OF_BOARD) return
         playingBoard[rowNumber][colNumber] = cellStatus
     }
 
-    override fun getBoardSize(): Int = sizeOfBoard
-
     override fun applyRules(rules: GameOfLifeRule) {
-        val newBoard = arrayOf<Array<CellStatus>>()
-        for (i in 0 until sizeOfBoard) {
+        var newBoard = arrayOf<Array<CellStatus>>()
+        for (i in 0 until SIZE_OF_BOARD) {
             var array = arrayOf<CellStatus>()
-            for (j in 0 until sizeOfBoard) {
-                array += rules.checkIsAlive(playingBoard[i][j], getNeighbors(i,j))
+            for (j in 0 until SIZE_OF_BOARD) {
+                array += rules.checkIsAlive(playingBoard[i][j], getNeighbors(i, j))
             }
-            playingBoard += array
+            newBoard += array
         }
         playingBoard = newBoard
     }
@@ -79,7 +79,7 @@ class GameOfLifeBoardImpl(private val sizeOfBoard: Int) : GameOfLifeBoard {
 
     private fun isValidIndex(row: Int, column: Int): Boolean {
         if (row < 0 || column < 0) return false
-        if (row >= sizeOfBoard || column >= sizeOfBoard) return false
+        if (row >= SIZE_OF_BOARD || column >= SIZE_OF_BOARD) return false
         return true
     }
 }

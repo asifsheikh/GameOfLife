@@ -7,6 +7,7 @@ class GameOfLife(private val board: GameOfLifeBoard, private val rules: GameOfLi
     fun play() {
         board.printCurrentBoard()
         while (true) {
+            println()
             board.applyRules(rules)
             board.printCurrentBoard()
         }
