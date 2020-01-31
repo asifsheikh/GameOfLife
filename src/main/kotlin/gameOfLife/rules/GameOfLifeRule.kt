@@ -7,13 +7,15 @@ enum class CellStatus {
 
 class GameOfLifeRule {
     fun checkIsAlive(currentCellStatus: CellStatus, neighbors: Array<Int>): CellStatus {
-        val liveNeighbors =  neighbors
+        val liveNeighbors = neighbors
             .toList()
             .filter { it == 1 }
             .count()
 
-        return if (liveNeighbors == 2 || liveNeighbors == 3)
+        return if (currentCellStatus == CellStatus.LIVE && (liveNeighbors == 2 || liveNeighbors == 3))
             CellStatus.LIVE
+        else if (currentCellStatus == CellStatus.DEAD && liveNeighbors == 3)
+            return CellStatus.LIVE
         else
             CellStatus.DEAD
     }

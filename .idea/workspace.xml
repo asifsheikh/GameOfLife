@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18844b8-8a4a-4744-a4b3-1b36795e5878" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="936">
-              <caret line="93" column="107" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="107" />
+              <caret line="117" column="107" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="107" />
               <folding>
                 <element signature="e#26#132#0" expanded="true" />
               </folding>
@@ -283,21 +284,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeRulesTest_given_a_cell_with_two_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 45m 52s.xml">
-      <configuration name="GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="GameOfLifeRulesTest_given_a_cell_with_three_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 47m 36s.xml">
-      <configuration name="GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="GameOfLifeRulesTest_given_a_cell_with_three_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 48m 38s.xml">
-      <configuration name="GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="GameOfLifeRulesTest_given_a_live_cell__with_1_live_neighbor,_should_return_as_dead_for_next_iteration - 2020.01.31 at 11h 51m 52s.xml">
-      <configuration name="GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="GameOfLifeRulesTest_given_a_live_cell__with_1_live_neighbor,_should_return_as_dead_for_next_iteration - 2020.01.31 at 11h 52m 07s.xml">
-      <configuration name="GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="GameOfLifeRulesTest_given_a_live_cell_with_0_live_neighbors,_should_return_as_dead_for_next_iteration - 2020.01.31 at 11h 54m 06s.xml">
       <configuration name="GameOfLifeRulesTest.given a live cell with 0 live neighbors, should return as dead for next iteration" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -311,6 +297,21 @@
       <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 00m 15s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 01m 28s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 01m 35s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 03m 47s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 03m 48s.xml">
+      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 05m 38s.xml">
       <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
@@ -388,15 +389,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
-          <caret line="93" column="107" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="107" />
+          <caret line="117" column="107" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="107" />
           <folding>
             <element signature="e#26#132#0" expanded="true" />
           </folding>
