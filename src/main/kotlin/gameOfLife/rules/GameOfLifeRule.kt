@@ -12,7 +12,7 @@ class GameOfLifeRule {
             .filter { it == 1 }
             .count()
 
-        return if (liveNeighbors == 2)
+        return if (liveNeighbors == 2 || liveNeighbors == 3)
             CellStatus.LIVE
         else
             CellStatus.DEAD

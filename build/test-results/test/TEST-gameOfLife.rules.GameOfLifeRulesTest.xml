@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameOfLife.rules.GameOfLifeRulesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-31T06:15:52" hostname="Asifs-MacBook-Pro.local" time="0.032">
-  <properties/>
-  <testcase name="given a cell with two live neighbors, should return as live for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.032"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
