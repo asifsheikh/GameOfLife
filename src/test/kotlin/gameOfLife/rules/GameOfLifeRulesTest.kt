@@ -10,9 +10,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = LIVE
         val neighbors = intArrayOf(0,1,1,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -22,9 +21,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = LIVE
         val neighbors = intArrayOf(0,1,1,0,0,0,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -34,9 +32,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,0,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -46,9 +43,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,0,0,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -58,9 +54,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,1,0,0,1,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -70,9 +65,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = LIVE
         val expectedStatus = DEAD
         val neighbors = intArrayOf(1,1,1,1,0,0,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -82,9 +76,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,0,0,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -94,9 +87,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,0,1,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -106,9 +98,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,1,0,0,0,0,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -118,9 +109,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = LIVE
         val neighbors = intArrayOf(0,1,1,0,0,0,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -130,9 +120,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,1,0,0,1,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -142,9 +131,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,1,0,1,1,1,0)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -154,9 +142,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(0,1,1,0,1,1,1,1)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -166,9 +153,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(1,1,1,0,1,1,1,1)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
@@ -178,9 +164,8 @@ class GameOfLifeRulesTest {
         val currentCellStatus = DEAD
         val expectedStatus = DEAD
         val neighbors = intArrayOf(1,1,1,1,1,1,1,1)
-        val rules = GameOfLifeRule()
 
-        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+        val actualStatus = checkIsAlive(currentCellStatus,neighbors)
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }

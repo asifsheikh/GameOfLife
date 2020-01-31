@@ -1,15 +1,17 @@
 package gameOfLife
 
 import gameOfLife.board.GameOfLifeBoard
-import gameOfLife.rules.GameOfLifeRule
+import gameOfLife.rules.CellStatus
 
-class GameOfLife(private val board: GameOfLifeBoard, private val rules: GameOfLifeRule) {
+class GameOfLife(
+    private val gameOfLifeBoard: GameOfLifeBoard,
+    private val gameOfLifeRules: (CellStatus, IntArray) -> CellStatus
+) {
     fun play() {
-        board.printCurrentBoard()
-        while (true) {
+        for (i in 1..4) {
+            gameOfLifeBoard.printBoard()
+            gameOfLifeBoard.applyRules(rules = gameOfLifeRules)
             println()
-            board.applyRules(rules)
-            board.printCurrentBoard()
         }
     }
 }
