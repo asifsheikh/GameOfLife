@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="gameOfLife.rules.GameOfLifeRulesTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-01-31T06:40:16" hostname="Asifs-MacBook-Pro.local" time="0.035">
+<testsuite name="gameOfLife.rules.GameOfLifeRulesTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-01-31T07:00:15" hostname="Asifs-MacBook-Pro.local" time="0.034">
   <properties/>
   <testcase name="given a live cell with 0 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.032"/>
   <testcase name="given a dead cell with 4 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 6 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
-  <testcase name="given a live cell with 4 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
+  <testcase name="given a live cell with 4 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.001"/>
   <testcase name="given a live cell with three live neighbors, should return as live for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 8 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 1 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a cell with 5 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 5 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 7 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
-  <testcase name="given a live cell with two live neighbors, should return as live for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
+  <testcase name="given a live cell with two live neighbors, should return as live for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.001"/>
   <testcase name="given a live cell  with 1 live neighbor, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell with 0 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
   <testcase name="given a dead cell, with 2 live neighbors, should return as dead for next iteration" classname="gameOfLife.rules.GameOfLifeRulesTest" time="0.0"/>
