@@ -13,7 +13,7 @@ enum class CellStatus(private val symbol: String) {
 }
 
 class GameOfLifeRule {
-    fun checkIsAlive(currentCellStatus: CellStatus, neighbors: Array<Int>): CellStatus {
+    fun checkIsAlive(currentCellStatus: CellStatus, neighbors: IntArray): CellStatus {
         val liveNeighbors = getLiveNeighbor(neighbors)
         return when (currentCellStatus) {
             LIVE -> checkForAliveForLiveCell(liveNeighbors)
@@ -22,7 +22,7 @@ class GameOfLifeRule {
         }
     }
 
-    private fun getLiveNeighbor(neighbors: Array<Int>): Int = neighbors
+    private fun getLiveNeighbor(neighbors: IntArray): Int = neighbors
         .toList()
         .filter { it == 1 }
         .count()

@@ -1,17 +1,18 @@
 package gameOfLife
 
 import com.google.common.truth.Truth.assertThat
+import gameOfLife.board.GameOfLifeBoardImpl
 import gameOfLife.rules.CellStatus.*
 import org.junit.Before
 import org.junit.Test
 
-class BoardTest {
+class GameOfLifeBoardImplTest {
 
-    private lateinit var board: Board
+    private lateinit var board: GameOfLifeBoardImpl
 
     @Before
     fun setUp() {
-        board = Board(6)
+        board = GameOfLifeBoardImpl(6)
         board.initialize()
     }
 
