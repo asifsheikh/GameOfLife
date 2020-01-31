@@ -2,9 +2,14 @@ package gameOfLife.rules
 
 import gameOfLife.rules.CellStatus.*
 
-enum class CellStatus {
-    LIVE,
-    DEAD
+enum class CellStatus(private val symbol: String) {
+    LIVE("*"),
+    DEAD("-"),
+    INVALID("$");
+
+    override fun toString(): String {
+        return symbol
+    }
 }
 
 class GameOfLifeRule {
@@ -13,6 +18,7 @@ class GameOfLifeRule {
         return when (currentCellStatus) {
             LIVE -> checkForAliveForLiveCell(liveNeighbors)
             DEAD -> checkForAliveForDeadCell(liveNeighbors)
+            INVALID -> currentCellStatus
         }
     }
 

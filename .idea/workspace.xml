@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c18844b8-8a4a-4744-a4b3-1b36795e5878" name="Default Changelist" comment="" />
+    <list default="true" id="c18844b8-8a4a-4744-a4b3-1b36795e5878" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -34,13 +36,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
-              <folding>
-                <element signature="e#26#132#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="936">
+              <caret line="115" column="107" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -51,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -62,12 +62,15 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/kotlin/CanaryTest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeRulesTest.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.groovy" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt" />
       </list>
     </option>
   </component>
@@ -104,6 +107,21 @@
               <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
               <item name="gameoflife" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameoflife" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="gameOfLife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameoflife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameoflife" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -130,14 +148,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/kotlin/gameOfLife" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="gameOfLife" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="gameOfLife.rules" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="gameOfLife.rules" />
@@ -156,7 +183,87 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GameOfLifeRulesTest">
+  <component name="RunManager" selected="Gradle.BoardTest">
+    <configuration name="BoardTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardTest.should get the correct cell status for row and column number" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest.should get the correct cell status for row and column number&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardTest.should return invalid cell status for index out of bounds" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest.should return invalid cell status for index out of bounds&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardTest.should return invalid cell status for negative index" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.BoardTest.should return invalid cell status for negative index&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GameOfLifeRulesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,93 +284,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GameOfLifeRulesTest.given a cell with 5 live neighbors, should return as dead for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a cell with 5 live neighbors, should return as dead for next iteration&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GameOfLifeRulesTest.given a live cell with 0 live neighbors, should return as dead for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a live cell with 0 live neighbors, should return as dead for next iteration&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GameOfLifeRulesTest.given a live cell with 4 live neighbors, should return as dead for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a live cell with 4 live neighbors, should return as dead for next iteration&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardTest" />
+        <item itemvalue="Gradle.BoardTest.should return invalid cell status for negative index" />
+        <item itemvalue="Gradle.BoardTest.should return invalid cell status for index out of bounds" />
         <item itemvalue="Gradle.GameOfLifeRulesTest" />
-        <item itemvalue="Gradle.GameOfLifeRulesTest.given a cell with 5 live neighbors, should return as dead for next iteration" />
-        <item itemvalue="Gradle.GameOfLifeRulesTest.given a live cell with 4 live neighbors, should return as dead for next iteration" />
-        <item itemvalue="Gradle.GameOfLifeRulesTest.given a live cell with 0 live neighbors, should return as dead for next iteration" />
-        <item itemvalue="Gradle.GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" />
+        <item itemvalue="Gradle.BoardTest.should get the correct cell status for row and column number" />
       </list>
     </recent_temporary>
   </component>
@@ -281,35 +308,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 01m 35s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 34m 25s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 03m 47s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 34m 50s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 03m 48s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 35m 06s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 05m 38s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 49m 04s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 06m 32s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 49m 45s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 09m 02s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 50m 26s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 09m 19s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 50m 59s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 09m 35s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 52m 32s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 09m 55s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 53m 19s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="GameOfLifeRulesTest - 2020.01.31 at 12h 10m 16s.xml">
-      <configuration name="GameOfLifeRulesTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="BoardTest - 2020.01.31 at 17h 53m 58s.xml">
+      <configuration name="BoardTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -321,7 +348,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.5314815" />
@@ -329,7 +356,7 @@
       <window_info anchor="bottom" id="Build" weight="0.32962963" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32962963" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6351852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,13 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/GameOfLife.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -377,27 +397,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/GameOfLifeTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="126">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="314">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
+        <state relative-caret-position="358">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#26#132#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/Board.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/BoardTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="115" column="107" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="107" />
         </state>
       </provider>
     </entry>
