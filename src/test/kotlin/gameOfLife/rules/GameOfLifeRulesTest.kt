@@ -52,4 +52,29 @@ class GameOfLifeRulesTest {
 
         assertThat(actualStatus).isEqualTo(expectedStatus)
     }
+
+    @Test
+    fun `given a live cell with 4 live neighbors, should return as dead for next iteration`() {
+        val currentCellStatus = LIVE
+        val expectedStatus = DEAD
+        val neighbors = arrayOf(0,1,1,0,0,1,1,0)
+        val rules = GameOfLifeRule()
+
+        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+
+        assertThat(actualStatus).isEqualTo(expectedStatus)
+    }
+
+    @Test
+    fun `given a cell with 5 live neighbors, should return as dead for next iteration`() {
+        val currentCellStatus = LIVE
+        val expectedStatus = DEAD
+        val neighbors = arrayOf(1,1,1,1,0,0,1,0)
+        val rules = GameOfLifeRule()
+
+        val actualStatus = rules.checkIsAlive(currentCellStatus,neighbors)
+
+        assertThat(actualStatus).isEqualTo(expectedStatus)
+    }
+
 }
