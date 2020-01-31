@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="107" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="107" />
+            <state relative-caret-position="594">
+              <caret line="33" column="107" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="107" />
               <folding>
                 <element signature="e#26#132#0" expanded="true" />
               </folding>
@@ -148,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration">
+  <component name="RunManager" selected="Gradle.GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration">
     <configuration name="CanaryTest.should test if the test environment is setup properly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -169,12 +169,52 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;gameOfLife.rules.GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -211,6 +251,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GameOfLifeRulesTest.given a live cell  with 1 live neighbor, should return as dead for next iteration" />
+        <item itemvalue="Gradle.GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" />
         <item itemvalue="Gradle.GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration" />
         <item itemvalue="Gradle.GameOfLifeTest.should test the universe is setup properly" />
         <item itemvalue="Gradle.CanaryTest.should test if the test environment is setup properly" />
@@ -251,6 +293,12 @@
     </history-entry>
     <history-entry file="GameOfLifeRulesTest_given_a_cell_with_two_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 45m 52s.xml">
       <configuration name="GameOfLifeRulesTest.given a cell with two live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest_given_a_cell_with_three_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 47m 36s.xml">
+      <configuration name="GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="GameOfLifeRulesTest_given_a_cell_with_three_live_neighbors,_should_return_as_live_for_next_iteration - 2020.01.31 at 11h 48m 38s.xml">
+      <configuration name="GameOfLifeRulesTest.given a cell with three live neighbors, should return as live for next iteration" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -327,15 +375,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/gameOfLife/rules/GameOfLifeRule.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="252">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/gameOfLife/rules/GameOfLifeRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="107" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="107" />
+        <state relative-caret-position="594">
+          <caret line="33" column="107" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="107" />
           <folding>
             <element signature="e#26#132#0" expanded="true" />
           </folding>
