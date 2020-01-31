@@ -12,6 +12,7 @@ class BoardTest {
     @Before
     fun setUp() {
         board = Board(6)
+        board.initialize()
     }
 
     @Test
