@@ -13,15 +13,6 @@ class GameOfLifeBoardImpl : GameOfLifeBoard {
         playingBoard = getDefaultPlayingBoard()
     }
 
-    override fun printBoard() {
-        for (row in playingBoard) {
-            for (cell in row) {
-                print("$cell ")
-            }
-            println()
-        }
-    }
-
     override fun getBoard(): Array<Array<CellStatus>> = playingBoard.copyOf()
 
     override fun getCellStatus(rowNumber: Int, columnNumber: Int): CellStatus =
