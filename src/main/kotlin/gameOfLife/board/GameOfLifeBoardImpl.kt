@@ -35,14 +35,14 @@ class GameOfLifeBoardImpl : GameOfLifeBoard {
         playingBoard[rowNumber][colNumber] = cellStatus
     }
 
-    override fun applyRules(rules: (CellStatus, IntArray) -> CellStatus) {
+    override fun applyRules(checkIsAliveRule: (CellStatus, IntArray) -> CellStatus) {
         var newBoard = arrayOf<Array<CellStatus>>()
         for (i in 0 until SIZE_OF_BOARD) {
             var array = arrayOf<CellStatus>()
             for (j in 0 until SIZE_OF_BOARD) {
-                // array += rules(playingBoard[i][j], getNeighbors(i, j))
+                 array += checkIsAliveRule(playingBoard[i][j], getNeighbors(i, j))
             }
-            // newBoard += array
+             newBoard += array
         }
         playingBoard = newBoard
     }

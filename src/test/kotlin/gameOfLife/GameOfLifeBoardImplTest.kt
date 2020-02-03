@@ -3,7 +3,9 @@ package gameOfLife
 import com.google.common.truth.Truth.assertThat
 import gameOfLife.board.GameOfLifeBoardImpl
 import gameOfLife.board.SIZE_OF_BOARD
+import gameOfLife.rules.CellStatus
 import gameOfLife.rules.CellStatus.*
+import gameOfLife.rules.checkIsAlive
 import org.junit.Before
 import org.junit.Test
 
@@ -111,5 +113,25 @@ class GameOfLifeBoardImplTest {
         board.setCellStatus(DEAD, rowNumber, colNumber)
 
         assertThat(board.playingBoard).isEqualTo(expectedBoard)
+    }
+
+    @Test
+    fun `should apply the correct rules on the board and update the board`() {
+        val expectedBoard= getExpectedBoard()
+
+        board.applyRules(checkIsAliveRule = ::checkIsAlive)
+
+        assertThat(board.playingBoard).isEqualTo(expectedBoard)
+    }
+
+    private fun getExpectedBoard(): Array<Array<CellStatus>> {
+        var defaultBoard = arrayOf<Array<CellStatus>>()
+        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        defaultBoard += arrayOf(DEAD, LIVE, LIVE, LIVE, DEAD, DEAD)
+        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        return defaultBoard
     }
 }
