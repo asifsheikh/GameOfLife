@@ -20,8 +20,8 @@ class GameOfLifeBoardImplTest {
 
     @Test
     fun `should initialize the board with default configuration`() {
-        val numberOfRows = board.playingBoard.size
-        val numberOfCols = board.playingBoard[0].size
+        val numberOfRows = board.getBoard().size
+        val numberOfCols = board.getBoard()[0].size
 
         assertThat(numberOfRows).isEqualTo(SIZE_OF_BOARD)
         assertThat(numberOfCols).isEqualTo(SIZE_OF_BOARD)
@@ -90,29 +90,29 @@ class GameOfLifeBoardImplTest {
 
         board.setCellStatus(expectedCellStatus, rowNumber, colNumber)
 
-        assertThat(board.playingBoard[rowNumber][colNumber]).isEqualTo(expectedCellStatus)
+        assertThat(board.getBoard()[rowNumber][colNumber]).isEqualTo(expectedCellStatus)
     }
 
     @Test
     fun `should do nothing when setting the cell status for negative index`() {
-        val expectedBoard = board.playingBoard
+        val expectedBoard = board.getBoard()
         val rowNumber = -2
         val colNumber = 3
 
         board.setCellStatus(DEAD, rowNumber, colNumber)
 
-        assertThat(board.playingBoard).isEqualTo(expectedBoard)
+        assertThat(board.getBoard()).isEqualTo(expectedBoard)
     }
 
     @Test
     fun `should do nothing when setting the cell status for indexes greater than  size of board`() {
-        val expectedBoard = board.playingBoard
+        val expectedBoard = board.getBoard()
         val rowNumber = 9
         val colNumber = 3
 
         board.setCellStatus(DEAD, rowNumber, colNumber)
 
-        assertThat(board.playingBoard).isEqualTo(expectedBoard)
+        assertThat(board.getBoard()).isEqualTo(expectedBoard)
     }
 
     @Test
@@ -121,17 +121,17 @@ class GameOfLifeBoardImplTest {
 
         board.applyRules(checkIsAliveRule = ::checkIsAlive)
 
-        assertThat(board.playingBoard).isEqualTo(expectedBoard)
+        assertThat(board.getBoard()).isEqualTo(expectedBoard)
     }
 
     private fun getExpectedBoard(): Array<Array<CellStatus>> {
-        var defaultBoard = arrayOf<Array<CellStatus>>()
-        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
-        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
-        defaultBoard += arrayOf(DEAD, LIVE, LIVE, LIVE, DEAD, DEAD)
-        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
-        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
-        defaultBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
-        return defaultBoard
+        var playingBoard = arrayOf<Array<CellStatus>>()
+        playingBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        playingBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        playingBoard += arrayOf(DEAD, LIVE, LIVE, LIVE, DEAD, DEAD)
+        playingBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        playingBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        playingBoard += arrayOf(DEAD, DEAD, DEAD, DEAD, DEAD, DEAD)
+        return playingBoard
     }
 }

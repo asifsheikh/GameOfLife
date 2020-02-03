@@ -7,7 +7,7 @@ internal const val SIZE_OF_BOARD = 6
 
 class GameOfLifeBoardImpl : GameOfLifeBoard {
 
-    var playingBoard = arrayOf<Array<CellStatus>>()
+    private var playingBoard = arrayOf<Array<CellStatus>>()
 
     init {
         playingBoard = getDefaultPlayingBoard()
@@ -21,6 +21,8 @@ class GameOfLifeBoardImpl : GameOfLifeBoard {
             println()
         }
     }
+
+    override fun getBoard(): Array<Array<CellStatus>> = playingBoard.copyOf()
 
     override fun getCellStatus(rowNumber: Int, columnNumber: Int): CellStatus =
         if (rowNumber < 0 || columnNumber < 0) {
