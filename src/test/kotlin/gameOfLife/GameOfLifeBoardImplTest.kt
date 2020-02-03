@@ -27,7 +27,7 @@ class GameOfLifeBoardImplTest {
 
     @Test
     fun `should get the correct cell status for given row and column number`() {
-        val expectedCellStatus = LIVE
+        val expectedCellStatus = DEAD
         val rowNumber = 3
         val columnNumber = 3
 
@@ -38,7 +38,7 @@ class GameOfLifeBoardImplTest {
 
     @Test
     fun `should get the correct cell status for row and column number`() {
-        val expectedCellStatus = LIVE
+        val expectedCellStatus = DEAD
         val rowNumber = 0
         val columnNumber = 0
 

@@ -40,9 +40,9 @@ class GameOfLifeBoardImpl : GameOfLifeBoard {
         for (i in 0 until SIZE_OF_BOARD) {
             var array = arrayOf<CellStatus>()
             for (j in 0 until SIZE_OF_BOARD) {
-                array += rules(playingBoard[i][j], getNeighbors(i, j))
+                // array += rules(playingBoard[i][j], getNeighbors(i, j))
             }
-            newBoard += array
+            // newBoard += array
         }
         playingBoard = newBoard
     }
