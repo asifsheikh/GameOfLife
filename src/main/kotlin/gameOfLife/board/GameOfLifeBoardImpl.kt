@@ -40,7 +40,7 @@ class GameOfLifeBoardImpl : GameOfLifeBoard {
         playingBoard = newBoard
     }
 
-    private fun getNeighbors(row: Int, column: Int): IntArray {
+    fun getNeighbors(row: Int, column: Int): IntArray {
         val neighbors = IntArray(8)
         neighbors[0] = getNeighbor(row, column - 1)
         neighbors[1] = getNeighbor(row, column + 1)

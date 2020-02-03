@@ -116,6 +116,15 @@ class GameOfLifeBoardImplTest {
     }
 
     @Test
+    fun `should get the correct neighbors for a given cell`() {
+        val expectedNeighborList = intArrayOf(0,0,1,1,0,0,0,0)
+
+        val actualNeighborList = board.getNeighbors(2,2)
+
+        assertThat(actualNeighborList).isEqualTo(expectedNeighborList)
+    }
+
+    @Test
     fun `should apply the correct rules on the board and update the board`() {
         val expectedBoard= getExpectedBoard()
 
